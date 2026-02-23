@@ -341,3 +341,15 @@ ols_resid_on_resid <-
   )
 
 ols_resid_on_resid$beta
+
+#In question 17, we regressed CO2pc = b1 + b2*GDPpc + b3*GDPpc^2.
+#In question 19, we regressed
+# CO2pc on GDPpc, and obtained the residual e1 
+# 1 on GDPpc, and obtained the residual e2
+# GDPpc^2 on GDPpc, and obtained the residual e3
+#Finally we regressed e1 = a1*e2 + a2*e3. we see saw the coefficient on e2 is the same as b1; the coefficient on e3 is the same as b3.
+# That is, a1 = b1 and a2 = b3. 
+#This is an another example of FWL Thereom in action. Removing the variation in the CO2pc, 1, and GDPpc^2 that comes from GDPpc and using the residual variation as regressand/regressors
+#gives you the same coefficients as the original equation in Q17.  
+
+
