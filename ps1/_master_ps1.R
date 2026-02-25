@@ -296,7 +296,11 @@ ols_co2_gdp_demean <-
     intercept = FALSE
   )
   
-# They're the same, whoa!
+# The beta's we get from a regression where we demean the variables will be 
+# about the same to the results we get from question 17. Even though we do not 
+# include an explicit intercept, the demeaning allows us to recover the results
+# from question 17 because we are centering the data at zero and keeping the 
+# slope the same. 
 ols_co2_gdp_quad$beta
 ols_co2_gdp_demean$beta
 
